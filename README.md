@@ -5,4 +5,4 @@ Extract all LITERAL from an input javascript script
 ```npm install```
 
 # Usage
-'''RHPCO-JStrings.js input_file.js'''
+```RHPCO-JStrings.js input_file.js```
