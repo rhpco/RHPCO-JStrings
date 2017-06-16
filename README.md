@@ -2,7 +2,7 @@
 Extract all LITERAL from an input javascript script
 
 # Install
-npm install
+'''npm install'''
 
 # Usage
-node RHPCO-JStrings.js input_file.js
+'''RHPCO-JStrings.js input_file.js'''
