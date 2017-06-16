@@ -22,15 +22,19 @@ function listStrings(code){
     });
     return strings;
 }
+try{
+    if( typeof process.argv[2] != null ){
+        fs.readFile(process.argv[2], 'utf8', function (err,data) {
+            if (err) {
+                return console.log(err.message);
 
-if( typeof process.argv[2] != null ){
-    fs.readFile(process.argv[2], 'utf8', function (err,data) {
-        if (err) {
-            return console.log(err);
-        }
-        results = listStrings(data);
-        results.forEach(function(s){
-            console.log(s);
-        })
-    });
+            }
+            results = listStrings(data);
+            results.forEach(function(s){
+                console.log(s);
+            })
+        });
+    }
+}catch(err){
+    console.log("Sorry :(\n"+err.message);
 }
