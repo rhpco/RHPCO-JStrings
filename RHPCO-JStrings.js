@@ -38,3 +38,8 @@ try{
 }catch(err){
     console.log("Sorry :( \n"+err.message);
 }
+if (true) {
+    var a;
+}else{
+    var b=1;
+}
